@@ -6,6 +6,7 @@
 
 ## Contents
 - Identity
+- Resume summary
 - Background
 - Communication preferences
 - Working style
@@ -21,18 +22,30 @@
 - Location / time zone: _(unknown)_
 - Email: samuelfan99@gmail.com
 
+## Resume summary
+> A description of the user drawn from their resume. _(unknown)_ — not yet filled
+> in. To populate: read the user's resume (e.g. from Google Drive, once access is
+> approved, or pasted by the user) and summarize their education, roles, key skills,
+> and notable accomplishments here in a few concise lines.
+
 ## Background
 - Role / what they do: _(unknown)_
 - Experience and domains: _(unknown)_
 - Notable context worth knowing: _(unknown)_
 
 ## Communication preferences
-- Tone the user prefers (e.g. direct, warm, terse): _(unknown)_
-- Level of detail (concise summaries vs. full explanations): _(unknown)_
+- Keep descriptions concise. State the point; omit padding.
+- Avoid analogies unless one is truly necessary to make a point land.
+- Explain ideas through back-and-forth conversation, not all at once. Don't try to
+  cover every detail of an idea in a single response — give the core, then let the
+  discussion develop.
+- Expect and welcome follow-up questions; leave room for them rather than
+  pre-empting everything.
 - Formatting they like or dislike: _(unknown)_
-- How much to ask vs. act on reasonable assumptions: _(unknown)_
 
 ## Working style
+- When an approach fails, do not work around it by "hacking" the system or forcing
+  the task through. Stop, propose a solution, and ask for permission before acting on it.
 - How they like decisions made (options + recommendation, or just decide): _(unknown)_
 - How they like to review work (small steps vs. finished result): _(unknown)_
 - Pace and availability patterns: _(unknown)_
