@@ -17,21 +17,37 @@
 - Notes
 
 ## Identity
-- Name: _(unknown)_
+- Name: Senyuan Fan (also goes by Samuel)
 - Pronouns: _(unknown)_
-- Location / time zone: _(unknown)_
+- Location / time zone: San Jose, CA (US Pacific)
 - Email: samuelfan99@gmail.com
 
 ## Resume summary
-> A description of the user drawn from their resume. _(unknown)_ — not yet filled
-> in. To populate: read the user's resume (e.g. from Google Drive, once access is
-> approved, or pasted by the user) and summarize their education, roles, key skills,
-> and notable accomplishments here in a few concise lines.
+Machine Learning Engineer focused on LLM post-training and agentic systems.
+
+- **Now:** ML Engineer at TikTok (San Jose), building agentic systems for TikTok
+  Shops governance and user experience; training/post-training domain models.
+- **Prior:** ML Engineer at NIO USA (2024–2026) — built the function-calling agent
+  for NIO's in-car assistant (SFT, on-policy distillation, GRPO; function-calling
+  accuracy 40%→85% under a 100-token thinking budget); post-trained coding LLMs
+  (GRPO/GSPO/DAPO; Qwen3-32B unit-test pass 82%→94%); owned a distributed
+  post-training pipeline (Megatron, MS-Swift, VeRL, Slime). Earlier DSP/ML and
+  audio-systems internships at NIO and Dolby.
+- **Expertise:** LLM fine-tuning & post-training, RL (GRPO/PPO), data synthesis and
+  LLM-as-a-Judge evaluation, tool/function-calling and multimodal/GUI agents,
+  distributed training (PyTorch, DeepSpeed ZeRO, FSDP, Megatron); strong audio
+  ML/DSP background (ASR, TTS, speaker ID, spatial audio).
+- **Education:** Stanford (M.A., Music, Science & Technology, CCRMA, 2024);
+  University of Rochester (M.S. ECE; B.S. Audio & Music Engineering).
+- **Publications:** Neural and perceptual audio coding work, incl. a paper at the
+  AES 155th Convention.
+- **Contact (resume):** senyuan.samuel.fan@gmail.com ·
+  [LinkedIn](https://www.linkedin.com/in/senyuan-fan)
 
 ## Background
-- Role / what they do: _(unknown)_
-- Experience and domains: _(unknown)_
-- Notable context worth knowing: _(unknown)_
+- Role / what they do: Machine Learning Engineer (LLM post-training & agentic systems), currently at TikTok.
+- Experience and domains: LLM post-training/RL, agent systems, distributed training; audio ML/DSP.
+- Notable context worth knowing: Audio/music engineering roots (Stanford CCRMA); published at AES.
 
 ## Communication preferences
 - Keep descriptions concise. State the point; omit padding.
@@ -52,7 +68,7 @@
 - Pet peeves / things that slow them down: _(unknown)_
 
 ## Technical environment
-- Primary languages and frameworks: _(unknown)_
+- Primary languages and frameworks: Python, C, C++, MATLAB, JavaScript, TypeScript; PyTorch, DeepSpeed (ZeRO), FSDP, Megatron, MS-Swift, VeRL, Slime; vector databases.
 - Tools, editors, and platforms: _(unknown)_
 - Conventions and standards they follow: _(unknown)_
 
