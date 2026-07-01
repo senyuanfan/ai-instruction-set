@@ -66,7 +66,8 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 ## Working style
 - When an approach fails, do not work around it by "hacking" the system or forcing
   the task through. Stop, propose a solution, and ask for permission before acting on it.
-- How they like decisions made (options + recommendation, or just decide): _(unknown)_
+- Decisions: give options with a clear recommendation; proceed on the recommendation
+  for low-stakes calls, and stop to ask only when it's ambiguous or hard to reverse.
 - How they like to review work (small steps vs. finished result): _(unknown)_
 - Pace and availability patterns: _(unknown)_
 - Pet peeves / things that slow them down: _(unknown)_
