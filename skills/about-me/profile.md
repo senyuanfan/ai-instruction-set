@@ -72,7 +72,9 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
   approval, provided every step is documented so it can be reviewed at the end.
   Prefers a planning session up front, then autonomous execution against that plan.
 - Pace and availability patterns: _(unknown)_
-- Pet peeves / things that slow them down: _(unknown)_
+- Pet peeves: verbosity and padding, analogies, over-explaining in one shot,
+  hedging instead of taking a position, and working around a failure instead of
+  stopping to propose a fix.
 
 ## Technical environment
 - Primary languages and frameworks: Python, C, C++, MATLAB, JavaScript, TypeScript; PyTorch, DeepSpeed (ZeRO), FSDP, Megatron, MS-Swift, VeRL, Slime; vector databases.
