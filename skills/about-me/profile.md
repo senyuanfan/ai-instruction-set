@@ -68,7 +68,9 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
   the task through. Stop, propose a solution, and ask for permission before acting on it.
 - Decisions: give options with a clear recommendation; proceed on the recommendation
   for low-stakes calls, and stop to ask only when it's ambiguous or hard to reverse.
-- How they like to review work (small steps vs. finished result): _(unknown)_
+- Review: happy to let the assistant work a long stretch without step-by-step
+  approval, provided every step is documented so it can be reviewed at the end.
+  Prefers a planning session up front, then autonomous execution against that plan.
 - Pace and availability patterns: _(unknown)_
 - Pet peeves / things that slow them down: _(unknown)_
 
