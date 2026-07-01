@@ -14,9 +14,9 @@ disclosure).
 | Skill | What it does |
 | --- | --- |
 | [`about-me`](skills/about-me/) | Serves the user's profile of record — identity, working style, preferences, environment, and goals — so the assistant can tailor its work. |
-| [`grill-me`](skills/grill-me/) | Runs a guided interview to learn about the user and writes the answers into the `about-me` profile. |
+| [`grill-me`](skills/grill-me/) | Interrogates the user one question at a time to reach shared understanding — stress-testing a plan or design, or (as one mode) filling in the `about-me` profile. |
 
-The two work together: **`grill-me` gathers** the information that **`about-me` serves**.
+In profile mode, the two work together: **`grill-me` gathers** the information that **`about-me` serves**.
 
 ## Layout
 
