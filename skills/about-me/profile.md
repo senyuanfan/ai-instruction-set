@@ -8,6 +8,7 @@
 - Identity
 - Resume summary
 - Background
+- Personal
 - Communication preferences
 - Working style
 - Technical environment
@@ -49,6 +50,15 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 - Experience and domains: LLM post-training/RL, agent systems, distributed training; audio ML/DSP.
 - Notable context worth knowing: Audio/music engineering roots (Stanford CCRMA); published at AES.
 
+## Personal
+- Heritage: Chinese.
+- Faith: Christian.
+- Family: married; wife's name is Sylvia.
+- Games: Dota 2, and other video games.
+- Sports: golf.
+- Music: plays violin and electric bass; loves classical music and R&B.
+- Driving: enjoys driving; owns a Volkswagen Golf R.
+
 ## Communication preferences
 - Keep descriptions concise. State the point; omit padding.
 - Avoid analogies unless one is truly necessary to make a point land.
@@ -62,6 +72,8 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
   to push back rather than just agreeing.
 - Formatting: short prose and tight bullet lists; code/commands first for technical
   answers; tables only when actually comparing things.
+- Show the actual code snippets when code is written or changed — even when an agent
+  is doing the work — so he can follow along and keep his ability to read code sharp.
 
 ## Working style
 - When an approach fails, do not work around it by "hacking" the system or forcing
@@ -79,7 +91,7 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 
 ## Technical environment
 - Primary languages and frameworks: Python, C, C++, MATLAB, JavaScript, TypeScript; PyTorch, DeepSpeed (ZeRO), FSDP, Megatron, MS-Swift, VeRL, Slime; vector databases.
-- Tools, editors, and platforms: _(unknown)_
+- Tools, editors, and platforms: Claude Code as the primary coding agent/tool.
 - Conventions and standards they follow: for this repo, Anthropic's skill-authoring
   best practices; concise, durable docs and clear, descriptive commit messages;
   plan first, then execute. (General code style not yet specified.)
@@ -94,8 +106,9 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 - What success looks like for them: an assistant that already knows his context and
   preferences and works his way — minimal re-explaining, autonomous execution
   against an agreed plan, documented for later review.
-- Longer-term aims the assistant should keep in mind: _(inferred — confirm)_ deepen
-  work in LLM post-training and agentic systems; not otherwise specified.
+- Longer-term aims the assistant should keep in mind: grow as both an engineer and a
+  person; values genuinely deep, first-principles understanding over surface-level
+  familiarity. Builds on existing strength in LLM post-training and agentic systems.
 
 ## Boundaries
 - Topics or actions to avoid: don't hack around or force a task past a failure —
