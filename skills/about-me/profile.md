@@ -18,7 +18,7 @@
 
 ## Identity
 - Name: Senyuan Fan (also goes by Samuel)
-- Pronouns: _(unknown)_
+- Pronouns: he/him
 - Location / time zone: San Jose, CA (US Pacific)
 - Email: samuelfan99@gmail.com
 
@@ -57,7 +57,11 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
   discussion develop.
 - Expect and welcome follow-up questions; leave room for them rather than
   pre-empting everything.
-- Formatting they like or dislike: _(unknown)_
+- Offer opinions and "hot takes" when discussing something — don't stay neutral.
+- Point out where he may be making a mistake or a wrong assumption; don't hesitate
+  to push back rather than just agreeing.
+- Formatting: short prose and tight bullet lists; code/commands first for technical
+  answers; tables only when actually comparing things.
 
 ## Working style
 - When an approach fails, do not work around it by "hacking" the system or forcing
