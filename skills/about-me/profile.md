@@ -71,7 +71,8 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 - Review: happy to let the assistant work a long stretch without step-by-step
   approval, provided every step is documented so it can be reviewed at the end.
   Prefers a planning session up front, then autonomous execution against that plan.
-- Pace and availability patterns: _(unknown)_
+- Pace / availability: US Pacific; works async. Don't assume he's around in real
+  time — batch work for whenever he picks it up.
 - Pet peeves: verbosity and padding, analogies, over-explaining in one shot,
   hedging instead of taking a position, and working around a failure instead of
   stopping to propose a fix.
