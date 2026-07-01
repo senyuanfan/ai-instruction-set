@@ -1,7 +1,7 @@
 # User Profile
 
 > Profile of record for the **about-me** skill. Fields marked _(unknown)_ have not
-> been filled in yet — use the **ask-me** skill to gather them. Keep every entry
+> been filled in yet — use the **grill-me** skill to gather them. Keep every entry
 > short and durable; this is a reference, not a journal.
 
 ## Contents

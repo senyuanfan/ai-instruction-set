@@ -1,20 +1,22 @@
 ---
-name: ask-me
-description: Interviews the user to learn about them — background, communication and working style, technical environment, current projects, and goals — and records the answers into the about-me profile. Use when the user says "ask me", "get to know me", or "learn about me", when onboarding a new setup, or when the about-me profile is missing information needed for the current task.
+name: grill-me
+description: Interviews the user to learn about them — background, communication and working style, technical environment, current projects, and goals — and records the answers into the about-me profile. Use when the user says "grill me", "get to know me", or "learn about me", when onboarding a new setup, or when the about-me profile is missing information needed for the current task.
 ---
 
-# Ask Me
+# Grill Me
 
 A guided interview to learn about the user and capture it durably in the **about-me** profile.
 
 ## When to run
-- The user asks you to get to know them, or says "ask me".
+- The user asks you to get to know them, or says "grill me".
 - The profile at `../about-me/profile.md` has _(unknown)_ fields relevant to the work at hand.
 - You keep lacking context you could have gathered once.
 
 ## Interview principles
 - Ask **one topic at a time**, and wait for the answer before moving on.
 - Keep each turn short — a few focused questions, never a wall of them.
+- **Offer a recommended answer** with each question, so the user can confirm or correct rather than compose from scratch.
+- **Don't ask what you can already determine.** If context you have (the resume, this repo, earlier conversation) answers a field, fill it in and confirm instead of asking.
 - Ask natural follow-ups when an answer is vague or interesting.
 - Say why you're asking when the reason isn't obvious.
 - Never invent answers. If the user skips something, leave it _(unknown)_ and move on.

@@ -19,4 +19,4 @@ When the user states a new lasting preference, fact, or piece of context ("I pre
 
 ## When the profile is thin
 
-If [profile.md](profile.md) is largely empty, or a section marked _(unknown)_ is relevant to the current task, use the **ask-me** skill to interview the user and fill in the gaps rather than guessing.
+If [profile.md](profile.md) is largely empty, or a section marked _(unknown)_ is relevant to the current task, use the **grill-me** skill to interview the user and fill in the gaps rather than guessing.

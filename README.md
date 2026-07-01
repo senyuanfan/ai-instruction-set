@@ -14,9 +14,9 @@ disclosure).
 | Skill | What it does |
 | --- | --- |
 | [`about-me`](skills/about-me/) | Serves the user's profile of record — identity, working style, preferences, environment, and goals — so the assistant can tailor its work. |
-| [`ask-me`](skills/ask-me/) | Runs a guided interview to learn about the user and writes the answers into the `about-me` profile. |
+| [`grill-me`](skills/grill-me/) | Runs a guided interview to learn about the user and writes the answers into the `about-me` profile. |
 
-The two work together: **`ask-me` gathers** the information that **`about-me` serves**.
+The two work together: **`grill-me` gathers** the information that **`about-me` serves**.
 
 ## Layout
 
@@ -24,8 +24,8 @@ The two work together: **`ask-me` gathers** the information that **`about-me` se
 skills/
 ├── about-me/
 │   ├── SKILL.md        # overview + how to apply the profile
-│   └── profile.md      # the profile of record (edit me / filled by ask-me)
-└── ask-me/
+│   └── profile.md      # the profile of record (edit me / filled by grill-me)
+└── grill-me/
     ├── SKILL.md        # interview workflow
     └── question-bank.md # questions grouped by topic
 ```
@@ -39,7 +39,7 @@ user skills directory:
 ```bash
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/skills/about-me" ~/.claude/skills/about-me
-ln -s "$(pwd)/skills/ask-me"   ~/.claude/skills/ask-me
+ln -s "$(pwd)/skills/grill-me" ~/.claude/skills/grill-me
 ```
 
 To scope them to a single project instead, place them under that project's
@@ -48,7 +48,7 @@ To scope them to a single project instead, place them under that project's
 ## Getting started
 
 1. Install the skills (above).
-2. Ask the assistant to "ask me about myself" — it runs `ask-me` and fills in
+2. Ask the assistant to "grill me about myself" — it runs `grill-me` and fills in
    `skills/about-me/profile.md`.
 3. From then on, the assistant reads `about-me` to work the way you prefer.
 
