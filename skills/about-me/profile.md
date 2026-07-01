@@ -80,19 +80,28 @@ Machine Learning Engineer focused on LLM post-training and agentic systems.
 ## Technical environment
 - Primary languages and frameworks: Python, C, C++, MATLAB, JavaScript, TypeScript; PyTorch, DeepSpeed (ZeRO), FSDP, Megatron, MS-Swift, VeRL, Slime; vector databases.
 - Tools, editors, and platforms: _(unknown)_
-- Conventions and standards they follow: _(unknown)_
+- Conventions and standards they follow: for this repo, Anthropic's skill-authoring
+  best practices; concise, durable docs and clear, descriptive commit messages;
+  plan first, then execute. (General code style not yet specified.)
 
 ## Current focus
-- Active projects: _(unknown)_
-- Near-term priorities: _(unknown)_
+- Active projects: the ai-instruction-set personal skills repo (this repo). At work,
+  agentic systems for TikTok Shops governance and user experience.
+- Near-term priorities: build out and refine the skill set (about-me, grill-me) and
+  keep the profile current.
 
 ## Goals
-- What success looks like for them: _(unknown)_
-- Longer-term aims the assistant should keep in mind: _(unknown)_
+- What success looks like for them: an assistant that already knows his context and
+  preferences and works his way — minimal re-explaining, autonomous execution
+  against an agreed plan, documented for later review.
+- Longer-term aims the assistant should keep in mind: _(inferred — confirm)_ deepen
+  work in LLM post-training and agentic systems; not otherwise specified.
 
 ## Boundaries
-- Topics or actions to avoid: _(unknown)_
-- Privacy and sensitivity preferences: _(unknown)_
+- Topics or actions to avoid: don't hack around or force a task past a failure —
+  stop and propose a fix (see Working style).
+- Privacy and sensitivity preferences: comfortable sharing professional background
+  (resume and LinkedIn are public). Other sensitivities not yet specified.
 
 ## Notes
 - (Free-form durable facts that don't fit above.)
