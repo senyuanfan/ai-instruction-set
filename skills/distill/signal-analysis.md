@@ -39,9 +39,13 @@ answer:
 
 ## Persistence
 
-Append each distillation to a `distilled/` directory so cross-source detection and
-claim tracking have memory. Default layout (create it in the working project, or a
-path the user names):
+**Logging is off by default.** Compress and answer live; write nothing unless the
+user says "log this". Relevance comes live from the about-me profile, so the log
+exists only for what the profile can't give: cross-source patterns over time and
+claim tracking.
+
+When the user does opt in, append to a `distilled/` directory. Default layout
+(create it in the working project, or a path the user names):
 
 ```
 distilled/
@@ -70,8 +74,9 @@ which sources were actually right.
 
 ## Connecting to prior knowledge
 
-Never store an item in isolation. For each new distillation, state its relation to
-what's already known:
+Never treat an item in isolation. "Already known" means the about-me profile (the
+user's focus and stated beliefs) plus any prior entries in the log. State the new
+item's relation to it:
 - **Confirms** <prior item/belief> — adds weight.
 - **Contradicts** <prior item/belief> — trigger a disagreement analysis.
 - **Extends** <prior item/belief> — new angle on a known idea.

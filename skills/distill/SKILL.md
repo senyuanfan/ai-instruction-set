@@ -1,95 +1,93 @@
 ---
 name: distill
-description: Compresses any piece of content — article, paper, video, podcast, Reddit/X thread, meeting, or notes — into one small consistent schema (core claim, evidence, novelty, confidence, incentives, actionability, open questions), then hunts for signal across sources rather than summarizing. Use when the user shares content to analyze, asks "what's genuinely new here", "what would an expert notice", or "what is everyone repeating without evidence", wants facts separated from opinion and prediction, or wants several sources cross-referenced.
+description: On explicit request, compresses content the user provides (text, a fetchable webpage, notes, a paper) into a signal-first readout — a verdict on whether it's worth their time, then the relevant fields among core claim, evidence, novelty, confidence, incentives, actionability, and open questions — judged against what they are currently working on, and hunts for signal across multiple sources. Use when the user says "distill this", shares content asking what's genuinely new or worth their attention, or wants several sources cross-referenced. Not a summarizer, and it does not auto-fire on shared links.
 ---
 
 # Distill
 
-An information **compressor**, not a summarizer. A summary shortens; a compressor
-transforms content into a fixed schema so signal is directly comparable across
-everything the user reads. It sits between raw information and long-term memory to
+An information **compressor** and personal research analyst — not a summarizer. It
+turns content into signal measured against what the user is actually working on, to
 cut reading time and decision fatigue.
 
-Honor the user's style: concise, quotes/facts first, no padding, hot takes welcome,
-push back on weak claims. Lead with the schema — don't narrate around it.
+Runs on **explicit request only**: "distill this", or content shared with a
+question like "is this worth my time?" / "what's new here?". It never auto-fires on
+a pasted link, and never logs or edits anything unless invoked.
 
-## When to use
-- The user shares an article, paper, video, podcast, thread, meeting, or notes and
-  wants it analyzed or captured.
-- The user asks analyst questions: "what's genuinely new here?", "what would an
-  expert notice immediately?", "what is everyone repeating without evidence?",
-  "which few ideas deserve real attention?".
-- The user wants facts separated from opinions and predictions.
-- The user wants multiple sources on a topic cross-referenced.
+Honor the user's style: lead with the verdict, stay concise, quotes and facts
+first, no padding, hot takes welcome, push back on weak claims.
 
-## Two layers
+## What it does
 
-**Layer 1 — compress each item** into the schema below.
-**Layer 2 — hunt for signal** across items (repetition, disagreement, fact vs.
-opinion, claim tracking, links to prior knowledge).
+1. **Anchor to the user.** Read the [about-me](../about-me/profile.md) profile —
+   especially Current focus — so relevance is judged against what they're actually
+   doing, not in the abstract.
+2. **Ingest honestly.** Work from the text provided or a fetchable webpage. Run a
+   web search *only* to corroborate a load-bearing claim or fill a gap needed for
+   the verdict — not as a default step. Never fabricate content it couldn't
+   actually read (an un-fetchable video, a paywalled piece); say what it couldn't
+   ingest.
+3. **Compress to signal.** Give a verdict, then the fields that carry signal.
+4. **Hunt across sources** when there's more than one (Layer 2).
 
-## Layer 1: the compression schema
+## Output: verdict first, loose fields
 
-Every item becomes these seven fields. Full definitions and the copyable template
-are in [schema.md](schema.md).
+Lead with a one-line verdict tied to their current focus:
+
+> **Worth your hour / Skim / Skip** — <why, relative to what they're working on>
+
+Then surface only the fields below that carry signal for this item. They are a
+**lens, not a form** — use what's relevant, drop the rest, never pad an empty
+field. A golf tip and an RL paper should not wear the same shape.
 
 | Field | Purpose |
 | --- | --- |
 | Core claim | What is the author actually saying? (one sentence) |
-| Evidence | What facts, data, or experiments support it? |
+| Evidence | What facts, data, or experiments support it, and how strong? |
 | Novelty | What is genuinely new relative to what's already known? |
-| Confidence | High / Medium / Low — and why |
-| Incentives | What biases or motivations might shape this? |
-| Actionability | Is there anything worth doing or changing? |
-| Open questions | What remains uncertain? |
+| Confidence | High / Medium / Low that it's true — and why |
+| Incentives | What biases or motivations might shape it? |
+| Actionability | Anything worth doing or changing, given the user's work? |
+| Open questions | What remains uncertain? Predictions to revisit? |
 
-Rules: keep each field to a line or two; quote the source for the core claim and
-key evidence; if a field is empty, say so ("Novelty: none — restates known work")
-rather than padding it.
+Full definitions and worked examples: [schema.md](schema.md).
 
-## Layer 2: signal hunting
+## Layer 2: signal across sources
 
-Apply across items, not within one. Detail and techniques in
+Apply across items, not within one. Techniques in
 [signal-analysis.md](signal-analysis.md).
 
-- **Detect repetition across *independent* sources** — and check they're actually
-  independent (not citing each other).
-- **Highlight disagreements; never average them away.** Name who claims what.
-- **Separate facts from opinions from predictions.** Label each.
-- **Track claims over time** — record predictions so they can later be marked
-  right or wrong.
-- **Connect to existing knowledge**, don't store isolated notes: what does this
-  confirm, contradict, or extend?
+- **Repetition across *independent* sources** — verify independence before counting
+  it as corroboration.
+- **Disagreement — surface it, don't average it.** Name who claims what.
+- **Facts vs. opinions vs. predictions** — label each.
+- **Connect to prior knowledge** — what does this confirm, contradict, or extend?
 
 ## Analyst mode
 
-When asked for a verdict rather than a capture, answer the question directly using
-the schema as evidence. Default high-value questions:
+When the user wants a verdict rather than a capture, answer directly and lead with
+the answer:
 - What is genuinely new here?
-- What would an expert notice immediately (or dismiss)?
+- What would an expert notice immediately — or dismiss?
 - What is everyone repeating without evidence?
 - Which few ideas deserve an hour of real attention, and why those?
 
-## Persistence
+## Memory (opt-in)
 
-To make Layer 2 work over time, append each distillation to a `distilled/` log.
-Format, index, and claim-tracking convention are in
-[signal-analysis.md](signal-analysis.md#persistence). Connecting the log to a
-knowledge base (e.g. Notion) is a documented future extension, not required.
+- **Logging is off by default.** Compress and answer live; write nothing. Only when
+  the user says "log this" append to a `distilled/` log — see
+  [signal-analysis.md](signal-analysis.md#persistence). The log powers cross-source
+  patterns over time and claim tracking.
+- **Enrich the profile.** When distilling surfaces a durable fact or interest about
+  the user, add it to the [about-me](../about-me/profile.md) profile (durable facts
+  only, same bar as about-me's keep-current rule) and tell them — don't ask first.
 
 ## Workflow
 
 ```
 Distill Progress:
-- [ ] 1. Identify the item(s) and the user's intent (capture vs. verdict)
-- [ ] 2. Compress each item into the seven-field schema
-- [ ] 3. Run Layer 2 across items and any prior distillations
-- [ ] 4. Answer the analyst question if one was asked
-- [ ] 5. Append to distilled/ if persistence is wanted
+- [ ] 1. Read about-me/Current focus to anchor relevance
+- [ ] 2. Ingest the item(s) honestly; web-search only if needed
+- [ ] 3. Verdict first, then the fields that carry signal
+- [ ] 4. Run Layer 2 across items if there's more than one
+- [ ] 5. Only if asked: log it; enrich about-me if a durable fact surfaced
 ```
-
-1. **Scope it.** One item or several? Does the user want a capture, or a judgment?
-2. **Compress** each item; quote sources; leave thin fields honestly thin.
-3. **Cross-reference** against the other items and the existing log.
-4. **Answer** the analyst question directly, using the schema as evidence.
-5. **Persist** if wanted, and note what to revisit (predictions to score later).

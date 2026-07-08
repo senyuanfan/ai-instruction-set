@@ -1,11 +1,13 @@
 # Compression Schema
 
-The seven fields every item is compressed into, with definitions and a copyable
-template. Keep entries short — this is a compressor, not notes.
+Seven fields to compress an item's signal into — a **lens, not a mandatory form**.
+Lead with the verdict, then surface only the fields that carry signal for this
+item; drop the rest rather than padding them. Keep entries short — this is a
+compressor, not notes.
 
 ## Contents
 - Field definitions
-- Output template
+- Output shape
 - Worked example
 
 ## Field definitions
@@ -30,23 +32,32 @@ template. Keep entries short — this is a compressor, not notes.
 - **Open questions** — what remains uncertain, untested, or unexplained; what you'd
   need to resolve confidence; any predictions to score later.
 
-## Output template
+## Output shape
+
+Verdict first, then the fields worth surfacing. The verdict is judged against the
+user's Current focus (from about-me), not in the abstract.
 
 ```
-Source: <title / url / who-and-where>   Type: <article|paper|video|thread|meeting|notes>
+Verdict: Worth your hour | Skim | Skip — <why, tied to what they're working on>
+Source:  <title / url / who-and-where>   Type: <article|paper|video|thread|notes>
 
+<only the fields that carry signal, e.g.:>
 Core claim:    <one sentence, quoted where possible>
 Evidence:      <what supports it, and how strong>
 Novelty:       <what's new vs. known — or "none" and why>
 Confidence:    <High|Medium|Low> — <why>
 Incentives:    <biases/motivations that may shape it>
-Actionability: <what to do/change — or "none">
+Actionability: <what to do/change, given their work — or "none">
 Open questions:<what's still uncertain; predictions to revisit>
 ```
+
+Not every field appears every time. A strong item might be four lines; a weak one
+might be a verdict plus a one-line Novelty ("none — restates prior work").
 
 ## Worked example
 
 ```
+Verdict: Skim — relevant to your agent work, but the evidence is too thin to act on.
 Source: "Small models beat large ones for agents" — X thread, @someone   Type: thread
 
 Core claim:    A fine-tuned 7B agent matches a frontier model on their internal tool-use eval.
