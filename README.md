@@ -15,8 +15,9 @@ disclosure).
 | --- | --- |
 | [`about-me`](skills/about-me/) | Serves the user's profile of record — identity, working style, preferences, environment, and goals — so the assistant can tailor its work. |
 | [`grill-me`](skills/grill-me/) | Interrogates the user one question at a time to reach shared understanding — stress-testing a plan or design, or (as one mode) filling in the `about-me` profile. |
+| [`distill`](skills/distill/) | Compresses any content into a fixed seven-field schema (core claim, evidence, novelty, confidence, incentives, actionability, open questions) and hunts for signal across sources — a personal research analyst, not a summarizer. |
 
-In profile mode, the two work together: **`grill-me` gathers** the information that **`about-me` serves**.
+In profile mode, `about-me` and `grill-me` work together: **`grill-me` gathers** the information that **`about-me` serves**.
 
 ## Layout
 
@@ -25,9 +26,13 @@ skills/
 ├── about-me/
 │   ├── SKILL.md        # overview + how to apply the profile
 │   └── profile.md      # the profile of record (edit me / filled by grill-me)
-└── grill-me/
-    ├── SKILL.md        # interview workflow
-    └── question-bank.md # questions grouped by topic
+├── grill-me/
+│   ├── SKILL.md        # interview workflow
+│   └── question-bank.md # questions grouped by topic
+└── distill/
+    ├── SKILL.md            # information compressor + signal hunting
+    ├── schema.md           # the seven-field compression schema
+    └── signal-analysis.md  # cross-source techniques + persistence
 ```
 
 ## Install
@@ -40,6 +45,7 @@ user skills directory:
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/skills/about-me" ~/.claude/skills/about-me
 ln -s "$(pwd)/skills/grill-me" ~/.claude/skills/grill-me
+ln -s "$(pwd)/skills/distill"  ~/.claude/skills/distill
 ```
 
 To scope them to a single project instead, place them under that project's
